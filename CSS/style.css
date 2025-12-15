@@ -1,0 +1,67 @@
+/* Element selector */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial;
+}
+
+/* ID selector */
+#mainHeader {
+    background-color: #4da6ff;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Element selector */
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Class selector */
+.title {
+    margin-bottom: 10px;
+}
+
+/* Class selector */
+.content {
+    background-color: white;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/* Multiple classes */
+.highlight {
+    background-color: #fff3cd;
+}
+
+/* Class selector */
+.sectionTitle {
+    color: #4da6ff;
+}
+
+/* Element selector */
+ul {
+    margin-left: 20px;
+}
+
+/* ID selector */
+#actionBtn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Element selector */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
