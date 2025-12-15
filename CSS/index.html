@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Basics Demo</title>
+
+    <style>
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial;
+        }
+
+        header {
+            background-color: #4da6ff;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .box {
+            background-color: #e6ffe6;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My First CSS Page</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2 style="color: #4da6ff;">Welcome Section (Inline CSS)</h2>
+
+        <p style="font-size: 18px;">
+            This paragraph is styled using inline CSS.
+            The font size is increased so the change is clearly visible.
+        </p>
+
+        <div class="box">
+            <h3>Box One</h3>
+            <p>
+                This box is styled using internal CSS.
+                Padding and background color come from the style tag.
+            </p>
+        </div>
+
+        <div class="box" style="background-color: #fff0b3;">
+            <h3>Box Two (Inline Override)</h3>
+            <p>
+                This box uses the same class,
+                but the background color is overridden using inline CSS.
+            </p>
+        </div>
+
+        <p>
+            Inline CSS has higher priority than internal CSS.
+            That is why Box Two looks different.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Pratham Raj</p>
+    </footer>
+
+</body>
+</html>
