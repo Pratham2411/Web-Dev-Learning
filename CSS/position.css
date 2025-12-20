@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f4f6;
+}
+
+header {
+    background-color: #020617;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.demo {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #9ca3af;
+    position: relative;
+}
+
+/* Common box */
+.box {
+    width: 140px;
+    height: 60px;
+    background-color: #93c5fd;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Static */
+.static {
+    position: static;
+    top: 20px;
+}
+
+/* Relative */
+.relative {
+    position: relative;
+    top: 15px;
+    left: 20px;
+    background-color: #86efac;
+}
+
+/* Absolute */
+.parent {
+    height: 120px;
+}
+
+.absolute {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #fca5a5;
+}
+
+/* Fixed */
+.fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fde68a;
+}
+
+/* Sticky */
+.sticky-area {
+    height: 300px;
+}
+
+.sticky {
+    position: sticky;
+    top: 10px;
+    background-color: #c7d2fe;
+}
+
+.spacer {
+    height: 500px;
+}
+
+footer {
+    background-color: #d1d5db;
+    text-align: center;
+    padding: 15px;
+}
