@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    padding: 30px;
+}
+
+.section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-left: 6px solid steelblue;
+}
+
+.title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* =======================
+   ::before
+   Inserts content BEFORE the element's actual content
+   Very useful for icons, labels, decorations
+   ======================= */
+.before-demo::before {
+    content: "👉 ";
+    color: red;
+    font-weight: bold;
+}
+
+/* =======================
+   ::after
+   Inserts content AFTER the element's content
+   Commonly used for badges, symbols, highlights
+   ======================= */
+.after-demo::after {
+    content: " ✔";
+    color: green;
+    font-weight: bold;
+}
+
+/* =======================
+   ::first-letter
+   Styles only the first letter of text
+   Mostly used in articles/blogs
+   ======================= */
+.first-letter-demo::first-letter {
+    font-size: 40px;
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* =======================
+   ::first-line
+   Styles only the first line of text
+   Depends on container width
+   ======================= */
+.first-line-demo::first-line {
+    color: purple;
+    font-weight: bold;
+}
+
+/* =======================
+   ::selection
+   Applies when user selects text
+   ======================= */
+::selection {
+    background-color: yellow;
+    color: black;
+}
+
+/* =======================
+   ::marker
+   Styles list bullets or numbers
+   ======================= */
+.marker-demo li::marker {
+    content:"➡️";
+    color: crimson;
+    font-size: 20px;
+}
+
+/* =======================
+   ::placeholder
+   Styles placeholder text in inputs
+   ======================= */
+input::placeholder {
+    color: rgb(14, 10, 247);
+    font-style: italic;
+}
+
+/* =======================
+   Real-world example:
+   Decorative underline using ::after
+   ======================= */
+.heading {
+    display: inline-block;
+    position: relative;
+}
+
+.heading::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: steelblue;
+    left: 0;
+    bottom: -5px;
+}

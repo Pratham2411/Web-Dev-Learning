@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Pseudo-Elements Demo</title>
+    <link rel="stylesheet" href="pseudo-element.css">
+</head>
+<body>
+
+<div class="section">
+    <div class="title">::before</div>
+    <p class="before-demo">
+        This text has content added before it using ::before.
+    </p>
+    <p>
+        Explanation: ::before inserts virtual content before the actual content of an element without modifying HTML.
+    </p>
+</div>
+
+<div class="section">
+    <div class="title">::after</div>
+    <p class="after-demo">
+        This text has content added after it using ::after.
+    </p>
+    <p>
+        Explanation: ::after is commonly used for icons, badges, decorative lines, and UI indicators.
+    </p>
+</div>
+
+<div class="section">
+    <div class="title">::first-letter</div>
+    <p class="first-letter-demo">
+        This paragraph demonstrates how only the first letter can be styled independently.
+    </p>
+    <p>
+        Explanation: ::first-letter targets only the very first character of a block-level element.
+    </p>
+</div>
+
+<div class="section">
+    <div class="title">::first-line</div>
+    <p class="first-line-demo">
+        This paragraph is long enough to span multiple lines so that the first line styling becomes clearly visible when the width changes. 
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt mollitia ut ullam obcaecati repudiandae nostrum rerum blanditiis explicabo doloribus. Et necessitatibus obcaecati iste fugiat excepturi assumenda modi saepe sapiente iure!
+    </p>
+    <p>
+        Explanation: ::first-line styles only the first visible line and depends on screen width.
+    </p>
+</div>
+
+<div class="section">
+    <div class="title">::selection</div>
+    <p>
+        Select this text with your mouse to see custom selection styling.
+    </p>
+    <p>
+        Explanation: ::selection applies styles when the user selects text.
+    </p>
+</div>
+
+<div class="section">
+    <div class="title">::marker</div>
+    <ul class="marker-demo">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ul>
+    <p>
+        Explanation: ::marker allows styling of list bullets or numbers.
+    </p>
+</div>
+
+<div class="section">
+    <div class="title">::placeholder</div>
+    <input type="text" placeholder="Enter your email">
+    <p>
+        Explanation: ::placeholder styles placeholder text inside input fields.
+    </p>
+</div>
+
+<div class="section">
+    <div class="title">Real UI Use Case</div>
+    <h2 class="heading">Section Heading</h2>
+    <p>
+        Explanation: Decorative underline added using ::after without extra HTML elements.
+    </p>
+</div>
+
+</body>
+</html>
