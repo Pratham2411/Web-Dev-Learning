@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    padding: 40px;
+}
+
+/* Section container */
+.section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-left: 6px solid steelblue;
+}
+
+.title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   DROPDOWN CONTAINER
+   ========================= */
+.dropdown {
+    position: relative; /* IMPORTANT: reference for absolute dropdown */
+    display: inline-block;
+}
+
+/* Button */
+.dropbtn {
+    background-color: steelblue;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* =========================
+   DROPDOWN CONTENT
+   ========================= */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+    margin-top: 5px;
+    z-index: 1;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+    display: block;
+    padding: 10px 14px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Hover effect on items */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* =========================
+   SHOW DROPDOWN ON HOVER
+   ========================= */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Button hover */
+.dropdown:hover .dropbtn {
+    background-color: #2b5d87;
+}
+
+/* =========================
+   NAVBAR STYLE DROPDOWN
+   ========================= */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Keep dropdown inline in navbar */
+.navbar .dropdown {
+    display: inline-block;
+}

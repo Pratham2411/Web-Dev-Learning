@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dropdown Menu Demo</title>
+    <link rel="stylesheet" href="dropdown-menu.css">
+</head>
+<body>
+
+<div class="section">
+    <div class="title">Basic Dropdown Menu</div>
+
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+
+    <p>
+        Explanation: A dropdown menu hides extra options and shows them
+        only when the user interacts with the button.
+    </p>
+    <p>
+        The parent element uses <b>position: relative</b> and the dropdown
+        content uses <b>position: absolute</b> to align correctly.
+    </p>
+</div>
+
+<div class="section">
+    <div class="title">Navbar Dropdown</div>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+
+        <div class="dropdown">
+            <a href="#">Services</a>
+            <div class="dropdown-content">
+                <a href="#">Web Development</a>
+                <a href="#">App Development</a>
+                <a href="#">SEO</a>
+            </div>
+        </div>
+
+        <a href="#">Contact</a>
+    </div>
+
+    <p>
+        Explanation: Dropdowns are commonly used inside navigation bars
+        to organize related links under one category.
+    </p>
+    <p>
+        Hovering over the parent shows the dropdown without JavaScript.
+    </p>
+</div>
+
+<div class="section">
+    <div class="title">Key Takeaways</div>
+    <p>
+        Dropdown menus improve UI clarity by grouping related options.
+    </p>
+    <p>
+        In production apps, JavaScript is often added for click-based
+        control and mobile support.
+    </p>
+</div>
+
+</body>
+</html>
