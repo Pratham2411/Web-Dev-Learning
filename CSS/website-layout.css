@@ -1,0 +1,109 @@
+/* =========================
+   GLOBAL RESET
+   ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+nav {
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #666;
+}
+
+/* =========================
+   MAIN LAYOUT
+   ========================= */
+.container {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+
+/* Sidebar */
+aside {
+    width: 25%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-left: 6px solid steelblue;
+}
+
+/* Main content */
+main {
+    width: 75%;
+    background-color: white;
+    padding: 20px;
+    border-left: 6px solid green;
+}
+
+/* Content sections */
+.section {
+    margin-bottom: 30px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+   Screen width < 600px
+   ========================= */
+@media (max-width: 600px) {
+
+    /* Navbar becomes vertical */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Main layout becomes column */
+    .container {
+        flex-direction: column;
+    }
+
+    aside, main {
+        width: 100%;
+    }
+
+    header {
+        font-size: 18px;
+    }
+}
