@@ -1,80 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>CSS Pagination Demo</title>
+    <title>Pagination with Pages</title>
     <link rel="stylesheet" href="pagination.css">
 </head>
 <body>
 
 <div class="section">
-    <div class="title">Basic Pagination</div>
-    <div class="pagination">
-        <a href="#">1</a>
-        <a href="#" class="active">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-    </div>
-    <p>
-        Explanation: Pagination is used to divide large content into multiple pages.
-        Each link represents a page number.
-    </p>
-</div>
+    <div class="title">Pagination with Actual Pages</div>
 
-<div class="section">
-    <div class="title">Pagination with Previous / Next</div>
-    <div class="pagination">
-        <a href="#" class="disabled">Prev</a>
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">Next</a>
-    </div>
     <p>
-        Explanation: Disabled state is applied when navigation is not allowed
-        (e.g., no previous page).
+        Explanation: Pagination divides large content into multiple pages.
+        Clicking a page number shows different content.
+        Here we simulate real pagination using pure CSS (:target).
     </p>
-</div>
 
-<div class="section">
-    <div class="title">Rounded Pagination</div>
-    <div class="pagination rounded">
-        <a href="#">1</a>
-        <a href="#" class="active">2</a>
-        <a href="#">3</a>
-    </div>
-    <p>
-        Explanation: Rounded pagination is commonly used in modern UI designs
-        for compact navigation.
-    </p>
-</div>
-
-<div class="section">
-    <div class="title">Large Pagination (Size Variation)</div>
-    <div class="pagination large">
-        <a href="#">1</a>
-        <a href="#" class="active">2</a>
-        <a href="#">3</a>
-    </div>
-    <p>
-        Explanation: Pagination size can be increased for better accessibility
-        or touch-friendly interfaces.
-    </p>
-</div>
-
-<div class="section center">
-    <div>
-        <div class="title">Centered Pagination</div>
-        <div class="pagination">
-            <a href="#">1</a>
-            <a href="#" class="active">2</a>
-            <a href="#">3</a>
-        </div>
+    <!-- PAGE 1 -->
+    <div id="page1" class="page">
+        <h3>Page 1</h3>
         <p>
-            Explanation: Pagination is often centered at the bottom of pages
-            like blogs, search results, and e-commerce listings.
+            This is Page 1 content.  
+            Example: List of products, blog posts, or search results.
         </p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
     </div>
+
+    <!-- PAGE 2 -->
+    <div id="page2" class="page">
+        <h3>Page 2</h3>
+        <p>
+            This is Page 2 content.  
+            Pagination prevents loading too much data at once.
+        </p>
+        <ul>
+            <li>Item 4</li>
+            <li>Item 5</li>
+            <li>Item 6</li>
+        </ul>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div id="page3" class="page">
+        <h3>Page 3</h3>
+        <p>
+            This is Page 3 content.  
+            Used heavily in blogs, e-commerce, and dashboards.
+        </p>
+        <ul>
+            <li>Item 7</li>
+            <li>Item 8</li>
+            <li>Item 9</li>
+        </ul>
+    </div>
+
+    <!-- PAGINATION -->
+    <div class="pagination rounded">
+        <a href="#page1" class="active">1</a>
+        <a href="#page2">2</a>
+        <a href="#page3">3</a>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">Key Takeaway</div>
+    <p>
+        Pagination improves performance and user experience by showing
+        limited data per page instead of overwhelming the user.
+    </p>
+    <p>
+        In real projects, JavaScript or backend logic replaces :target
+        to load actual data dynamically.
+    </p>
 </div>
 
 </body>
