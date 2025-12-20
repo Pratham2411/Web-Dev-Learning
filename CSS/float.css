@@ -1,0 +1,84 @@
+/* Page base */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #020617;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Float text section */
+.float-text {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    overflow: auto;
+}
+
+/* Floating boxes */
+.float-box {
+    width: 120px;
+    height: 120px;
+    background-color: #2563eb;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+    font-weight: bold;
+}
+
+.left-box {
+    float: left;
+    margin-right: 15px;
+}
+
+.right-box {
+    float: right;
+    margin-left: 15px;
+}
+
+/* Float layout section */
+.clearfix-container {
+    background-color: #e5e7eb;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Columns using float */
+.column {
+    float: left;
+    width: 30%;
+    margin-right: 3.33%;
+    height: 120px;
+    background-color: white;
+    border: 1px solid #9ca3af;
+    text-align: center;
+    line-height: 120px;
+    font-weight: bold;
+}
+
+/* Remove margin from last column */
+.column:last-child {
+    margin-right: 0;
+}
+
+/* Clearfix */
+.clearfix-container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Footer */
+footer {
+    background-color: #d1d5db;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
