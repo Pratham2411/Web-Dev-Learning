@@ -1,0 +1,79 @@
+/* Page base */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Common box styling */
+.box {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+}
+
+/* Solid border */
+.solid-border {
+    border: 2px solid #1f2933;
+}
+
+/* Dashed and dotted border */
+.dashed-border {
+    border-width: 2px;
+    border-style: dashed;
+    border-color: #2563eb;
+}
+
+/* Border with different colors */
+.colored-border {
+    border-top: 3px solid #16a34a;
+    border-right: 3px solid #2563eb;
+    border-bottom: 3px solid #dc2626;
+    border-left: 3px solid #ca8a04;
+}
+
+/* Rounded borders */
+.rounded-border {
+    border: 2px solid #6b7280;
+    border-radius: 12px;
+}
+
+/* Button section */
+.button-area {
+    text-align: center;
+    margin: 30px;
+}
+
+/* Button with border */
+.border-btn {
+    padding: 12px 25px;
+    background-color: white;
+    border: 2px solid #2563eb;
+    color: #2563eb;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.border-btn:hover {
+    background-color: #2563eb;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #d1d5db;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
