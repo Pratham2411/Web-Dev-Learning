@@ -1,0 +1,138 @@
+/* Page base */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Header */
+header {/* Page base */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #111827;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Common box styling */
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    width: 80%;
+}
+
+/* Margin on all sides */
+.margin-all {
+    margin: 30px;
+}
+
+/* Different margins on each side */
+.margin-sides {
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+/* Centering using margin auto */
+.center-box {
+    margin: 40px auto;
+}
+
+/* Margin collapse demo */
+.collapse-demo {
+    background-color: #e5e7eb;
+    margin: 30px;
+    padding: 20px;
+}
+
+.inner-box {
+    background-color: white;
+    padding: 15px;
+}
+
+.first-box {
+    margin-bottom: 30px;
+}
+
+.second-box {
+    margin-top: 40px;
+}
+
+/* Footer */
+footer {
+    background-color: #d1d5db;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
+    background-color: #111827;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Common box styling */
+.box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 6px;
+    width: 80%;
+}
+
+/* Margin on all sides */
+.margin-all {
+    margin: 30px;
+}
+
+/* Different margins on each side */
+.margin-sides {
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+}
+
+/* Centering using margin auto */
+.center-box {
+    margin: 40px auto;
+}
+
+/* Margin collapse demo */
+.collapse-demo {
+    background-color: #e5e7eb;
+    margin: 30px;
+    padding: 20px;
+}
+
+.inner-box {
+    background-color: white;
+    padding: 15px;
+}
+
+.first-box {
+    margin-bottom: 30px;
+}
+
+.second-box {
+    margin-top: 40px;
+}
+
+/* Footer */
+footer {
+    background-color: #d1d5db;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
