@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    padding: 40px;
+}
+
+/* Container for each demo block */
+.section {
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-left: 6px solid steelblue;
+}
+
+.title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* ==========================
+   BASIC PAGINATION CONTAINER
+   ========================== */
+.pagination {
+    display: inline-flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+/* ==========================
+   PAGINATION LINKS
+   ========================== */
+.pagination a {
+    padding: 8px 14px;
+    text-decoration: none;
+    color: steelblue;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.pagination a:hover {
+    background-color: steelblue;
+    color: white;
+}
+
+/* ==========================
+   ACTIVE PAGE
+   ========================== */
+.pagination a.active {
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+    border-color: steelblue;
+}
+
+/* ==========================
+   DISABLED STATE
+   ========================== */
+.pagination a.disabled {
+    color: #aaa;
+    pointer-events: none;
+    background-color: #eee;
+}
+
+/* ==========================
+   ROUNDED PAGINATION
+   ========================== */
+.pagination.rounded a {
+    border-radius: 50%;
+}
+
+/* ==========================
+   SIZE VARIATION
+   ========================== */
+.pagination.large a {
+    padding: 12px 18px;
+    font-size: 18px;
+}
+
+/* ==========================
+   CENTER ALIGN PAGINATION
+   ========================== */
+.center {
+    display: flex;
+    justify-content: center;
+}
