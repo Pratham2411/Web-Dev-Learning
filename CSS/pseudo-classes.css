@@ -1,0 +1,154 @@
+/* =========================
+   BASIC SETUP
+   ========================= */
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* =========================
+   :hover
+   Applied when mouse is over the element
+   Very commonly used for buttons, links, cards
+   ========================= */
+.button {
+    padding: 12px 24px;
+    background-color: steelblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: darkblue;
+    transform: scale(1.05);
+}
+
+/* =========================
+   :active
+   Triggered when element is being clicked
+   Happens for a very short time
+   ========================= */
+.button:active {
+    transform: scale(0.95);
+}
+
+/* =========================
+   :focus
+   Activated when input is selected
+   Important for accessibility
+   ========================= */
+input {
+    padding: 10px;
+    border: 2px solid gray;
+    outline: none;
+}
+
+input:focus {
+    border-color: green;
+    background-color: #eaffea;
+}
+
+/* =========================
+   :visited
+   Applies ONLY to links that were visited
+   Color limitations exist for security
+   ========================= */
+a:visited {
+    color: purple;
+}
+
+/* =========================
+   :link
+   Applies to links that are NOT visited yet
+   ========================= */
+a:link {
+    color: blue;
+}
+
+/* =========================
+   :first-child
+   Targets element if it is the FIRST child
+   ========================= */
+.list li:first-child {
+    font-weight: bold;
+    color: red;
+}
+
+/* =========================
+   :last-child
+   Targets element if it is the LAST child
+   ========================= */
+.list li:last-child {
+    font-style: italic;
+    color: green;
+}
+
+/* =========================
+   :nth-child()
+   Very powerful selector
+   odd / even / number / formula
+   ========================= */
+.list li:nth-child(odd) {
+    background-color: #ddd;
+}
+
+/* =========================
+   :not()
+   Selects everything EXCEPT the condition
+   ========================= */
+.list li:not(:first-child) {
+    padding-left: 10px;
+}
+
+/* =========================
+   :checked
+   Used with checkbox / radio
+   ========================= */
+input[type="checkbox"]:checked + label {
+    color: green;
+    font-weight: bold;
+}
+
+/* =========================
+   :disabled
+   Applies when input is disabled
+   ========================= */
+input:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* =========================
+   :enabled
+   Opposite of :disabled
+   ========================= */
+input:enabled {
+    background-color: white;
+}
+
+/* =========================
+   :required
+   When input has required attribute
+   ========================= */
+input:required {
+    border-left: 5px solid orange;
+}
+
+/* =========================
+   :valid and :invalid
+   Based on HTML validation rules
+   ========================= */
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
