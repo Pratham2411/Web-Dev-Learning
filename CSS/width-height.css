@@ -1,0 +1,73 @@
+/* Base */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #020617;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Sections */
+.demo {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #9ca3af;
+}
+
+/* Common box */
+.box {
+    background-color: #93c5fd;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #1e3a8a;
+}
+
+/* Fixed size */
+.fixed {
+    width: 200px;
+    height: 100px;
+}
+
+/* Percentage width */
+.parent {
+    width: 80%;
+    background-color: #e5e7eb;
+    padding: 10px;
+}
+
+.percent {
+    width: 50%;
+}
+
+/* Min & Max */
+.responsive {
+    width: 70%;
+    min-width: 200px;
+    max-width: 400px;
+}
+
+/* Height vs min-height */
+.fixed-height {
+    height: 60px;
+    overflow: hidden;
+}
+
+.min-height {
+    min-height: 60px;
+}
+
+/* Inline element demo */
+.inline-box {
+    width: 200px;
+    height: 80px;
+    background-color: #fca5a5;
+    padding: 10px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Width & Height</title>
+
+    <link rel="stylesheet" href="width-height.css">
+</head>
+<body>
+
+    <header>
+        <h1>CSS Width & Height</h1>
+        <p>Understanding size control of elements</p>
+    </header>
+
+    <main>
+
+        <section class="demo fixed-size">
+            <h2>Fixed Width & Height (px)</h2>
+            <div class="box fixed">200 × 100 px</div>
+        </section>
+
+        <section class="demo percent-size">
+            <h2>Percentage Width</h2>
+            <div class="parent">
+                <div class="box percent">50% width</div>
+            </div>
+        </section>
+
+        <section class="demo min-max">
+            <h2>Min & Max Width</h2>
+            <div class="box responsive">
+                Resize the window to see min and max width effect
+            </div>
+        </section>
+
+        <section class="demo height-demo">
+            <h2>Height vs Min-Height</h2>
+            <div class="box fixed-height">
+                Fixed height (content may overflow)
+            </div>
+            <div class="box min-height">
+                Min-height expands with content automatically.
+                Extra text added to show expansion behavior.
+            </div>
+        </section>
+
+        <section class="demo inline-demo">
+            <h2>Inline Element Width & Height</h2>
+            <span class="inline-box">Inline element</span>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2025 CSS Width & Height Practice | Pratham</p>
+    </footer>
+
+</body>
+</html>
