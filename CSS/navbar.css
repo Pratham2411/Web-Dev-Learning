@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 24px;
+    position: sticky;
+    top: 0;
+}
+
+/* Logo */
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Nav links */
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 8px 12px;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* =========================
+   PAGE SECTIONS
+   ========================= */
+.section {
+    padding: 40px;
+    background-color: white;
+    margin: 30px;
+    border-left: 6px solid steelblue;
+}
+
+.section h2 {
+    margin-top: 0;
+}
+
+/* Different colors for clarity */
+#home { border-color: steelblue; }
+#about { border-color: green; }
+#services { border-color: orange; }
+#contact { border-color: purple; }
