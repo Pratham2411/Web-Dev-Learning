@@ -1,86 +1,72 @@
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f3f4f6;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    padding: 40px;
 }
 
-header {
-    background-color: #020617;
-    color: white;
-    text-align: center;
+.section {
+    background: #ffffff;
     padding: 20px;
+    margin-bottom: 30px;
+    border-left: 6px solid steelblue;
 }
 
-.demo {
-    background-color: white;
-    margin: 20px;
-    padding: 20px;
-    border: 2px solid #9ca3af;
-    position: relative;
+.title {
+    font-size: 22px;
+    margin-bottom: 10px;
 }
 
-/* Common box */
-.box {
-    width: 140px;
-    height: 60px;
-    background-color: #93c5fd;
-    text-align: center;
-    line-height: 60px;
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-/* Static */
-.static {
-    position: static;
-    top: 20px;
-}
-
-/* Relative */
-.relative {
-    position: relative;
-    top: 15px;
-    left: 20px;
-    background-color: #86efac;
-}
-
-/* Absolute */
-.parent {
-    height: 120px;
-}
-
-.absolute {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: #fca5a5;
-}
-
-/* Fixed */
-.fixed {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #fde68a;
-}
-
-/* Sticky */
-.sticky-area {
-    height: 300px;
-}
-
-.sticky {
-    position: sticky;
-    top: 10px;
-    background-color: #c7d2fe;
-}
-
-.spacer {
-    height: 500px;
-}
-
-footer {
-    background-color: #d1d5db;
-    text-align: center;
+/* =========================
+   PAGE CONTENT
+   ========================= */
+.page {
+    display: none;
     padding: 15px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    background-color: #fafafa;
+}
+
+/* Show page when targeted */
+.page:target {
+    display: block;
+}
+
+/* Default page */
+#page1 {
+    display: block;
+}
+
+/* =========================
+   PAGINATION STYLES
+   ========================= */
+.pagination {
+    display: inline-flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.pagination a {
+    padding: 8px 14px;
+    text-decoration: none;
+    color: steelblue;
+    border: 1px solid #ccc;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.pagination a:hover {
+    background-color: steelblue;
+    color: white;
+}
+
+.pagination a.active {
+    background-color: steelblue;
+    color: white;
+    font-weight: bold;
+}
+
+/* Rounded style */
+.pagination.rounded a {
+    border-radius: 50%;
 }
