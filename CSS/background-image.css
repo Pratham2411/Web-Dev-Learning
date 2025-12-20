@@ -1,0 +1,61 @@
+/*
+IMPORTANT PATH RULE:
+Image path is always relative to THIS CSS file.
+
+Since:
+- CSS file is in root
+- images folder is also in root
+
+Correct path:
+url("images/bg-image.jpg")
+*/
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+FULL SCREEN BACKGROUND IMAGE
+What happens:
+- cover fills entire section
+- image may crop but no empty space
+- no-repeat prevents tiling
+*/
+.hero {
+    height: 100vh;
+
+    background-image: url("/HTML/images/bg-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+}
+
+/*
+BOX BACKGROUND IMAGE
+What happens:
+- contain keeps full image visible
+- empty space may appear
+- background-color acts as fallback
+*/
+.card {
+    width: 300px;
+    height: 200px;
+    margin: 40px auto;
+
+    background-image: url("/HTML/images/bg-image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    background-color: #e5e7eb;
+
+    border: 2px solid #111827;
+    text-align: center;
+    line-height: 200px;
+    font-weight: bold;
+}
