@@ -1,0 +1,69 @@
+/* General page styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f7;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #1f2933;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Common card styling */
+.card {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+/* Simple box shadow */
+.simple-shadow {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Soft modern shadow */
+.soft-shadow {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Inset shadow */
+.inset-shadow {
+    box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover shadow effect */
+.hover-shadow {
+    transition: box-shadow 0.3s ease;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Text shadow section */
+.text-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #e5e7eb;
+    border-radius: 6px;
+}
+
+/* Text shadow */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #d1d5db;
+    font-size: 14px;
+}
