@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox with 4 Containers</title>
+    <link rel="stylesheet" href="flexbox.css">
+</head>
+<body>
+
+<div class="section">
+    <div class="title">display: flex (Default Row)</div>
+    <p>
+        Explanation: When display is set to flex, items align horizontally by default.
+        These are the same four boxes used everywhere.
+    </p>
+
+    <div class="flex-container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">flex-direction: column</div>
+    <p>
+        Explanation: Changing flex-direction to column stacks items vertically.
+    </p>
+
+    <div class="flex-container column">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">justify-content</div>
+    <p>
+        Explanation: justify-content controls spacing along the main axis.
+        Below example uses <b>space-between</b>.
+    </p>
+
+    <div class="flex-container justify-between">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">align-items</div>
+    <p>
+        Explanation: align-items controls alignment along the cross axis.
+        Container height is fixed to show vertical movement.
+    </p>
+
+    <div class="flex-container align-center">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4">Box 4</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">flex-wrap</div>
+    <p>
+        Explanation: flex-wrap allows items to move to the next line
+        when there is not enough horizontal space.
+    </p>
+
+    <div class="flex-container wrap">
+        <div class="box box1" style="width:250px;">Box 1</div>
+        <div class="box box2" style="width:250px;">Box 2</div>
+        <div class="box box3" style="width:250px;">Box 3</div>
+        <div class="box box4" style="width:250px;">Box 4</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">flex-grow</div>
+    <p>
+        Explanation: flex-grow defines how much extra space a box takes
+        relative to others.
+    </p>
+
+    <div class="flex-container">
+        <div class="box box1 grow1">Grow 1</div>
+        <div class="box box2 grow2">Grow 2</div>
+        <div class="box box3 grow1">Grow 1</div>
+        <div class="box box4 grow1">Grow 1</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">align-self</div>
+    <p>
+        Explanation: align-self overrides align-items for a single item.
+        Box 4 behaves differently here.
+    </p>
+
+    <div class="flex-container align-center">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="box box4 self-end">Box 4</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">Key Takeaway</div>
+    <p>
+        These same four colored boxes are rearranged only by changing
+        Flexbox properties — no change in HTML structure.
+    </p>
+</div>
+
+</body>
+</html>

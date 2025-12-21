@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    padding: 30px;
+}
+
+/* Section wrapper */
+.section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 35px;
+    border-left: 6px solid #444;
+}
+
+.title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   FLEX CONTAINER BASE
+   ========================= */
+.flex-container {
+    display: flex;
+    border: 2px dashed #999;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+/* =========================
+   FLEX ITEMS (4 BOXES)
+   ========================= */
+.box {
+    color: white;
+    padding: 25px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Different colors */
+.box1 { background-color: #e63946; } /* Red */
+.box2 { background-color: #457b9d; } /* Blue */
+.box3 { background-color: #2a9d8f; } /* Green */
+.box4 { background-color: #f4a261; } /* Orange */
+
+/* =========================
+   FLEX DIRECTION
+   ========================= */
+.row {
+    flex-direction: row;
+}
+
+.column {
+    flex-direction: column;
+}
+
+/* =========================
+   JUSTIFY CONTENT
+   ========================= */
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/* =========================
+   ALIGN ITEMS
+   ========================= */
+.align-center {
+    align-items: center;
+    height: 180px;
+}
+
+.align-end {
+    align-items: flex-end;
+    height: 180px;
+}
+
+/* =========================
+   FLEX WRAP
+   ========================= */
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* =========================
+   FLEX GROW
+   ========================= */
+.grow1 { flex-grow: 1; }
+.grow2 { flex-grow: 2; }
+
+/* =========================
+   ALIGN SELF
+   ========================= */
+.self-end {
+    align-self: flex-end;
+}
