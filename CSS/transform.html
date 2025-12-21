@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Transform Properties</title>
+    <link rel="stylesheet" href="transform.css">
+</head>
+<body>
+
+<div class="section">
+    <div class="title">transform: translate()</div>
+    <p>
+        Explanation: <b>translate()</b> moves an element from its original position
+        without affecting surrounding elements.
+    </p>
+
+    <div class="container">
+        <div class="box box1 translate">Box 1</div>
+        <div class="box box2 translate">Box 2</div>
+        <div class="box box3 translate">Box 3</div>
+        <div class="box box4 translate">Box 4</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">transform: scale()</div>
+    <p>
+        Explanation: <b>scale()</b> increases or decreases the size of an element.
+        Scaling does NOT change layout space.
+    </p>
+
+    <div class="container">
+        <div class="box box1 scale">Box 1</div>
+        <div class="box box2 scale">Box 2</div>
+        <div class="box box3 scale">Box 3</div>
+        <div class="box box4 scale">Box 4</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">transform: rotate()</div>
+    <p>
+        Explanation: <b>rotate()</b> rotates an element clockwise or anticlockwise
+        around its center.
+    </p>
+
+    <div class="container">
+        <div class="box box1 rotate">Box 1</div>
+        <div class="box box2 rotate">Box 2</div>
+        <div class="box box3 rotate">Box 3</div>
+        <div class="box box4 rotate">Box 4</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">transform: skew()</div>
+    <p>
+        Explanation: <b>skew()</b> tilts an element along X and Y axes,
+        creating a slanted effect.
+    </p>
+
+    <div class="container">
+        <div class="box box1 skew">Box 1</div>
+        <div class="box box2 skew">Box 2</div>
+        <div class="box box3 skew">Box 3</div>
+        <div class="box box4 skew">Box 4</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">Multiple Transforms Combined</div>
+    <p>
+        Explanation: Multiple transform functions can be combined.
+        Order matters — transforms are applied from right to left.
+    </p>
+
+    <div class="container">
+        <div class="box box1 combo">Box 1</div>
+        <div class="box box2 combo">Box 2</div>
+        <div class="box box3 combo">Box 3</div>
+        <div class="box box4 combo">Box 4</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">Key Takeaway</div>
+    <p>
+        Transform changes visual appearance without disturbing layout.
+        This is why it is preferred over margin or position for animations.
+    </p>
+</div>
+
+</body>
+</html>

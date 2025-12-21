@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    padding: 30px;
+}
+
+/* Section wrapper */
+.section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 35px;
+    border-left: 6px solid #444;
+}
+
+.title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   BASE CONTAINER
+   ========================= */
+.container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* =========================
+   BOXES
+   ========================= */
+.box {
+    width: 120px;
+    height: 120px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s ease;
+}
+
+/* Different colors */
+.box1 { background-color: #e63946; }
+.box2 { background-color: #457b9d; }
+.box3 { background-color: #2a9d8f; }
+.box4 { background-color: #f4a261; }
+
+/* =========================
+   TRANSFORM PROPERTIES
+   ========================= */
+
+/* translate */
+.translate:hover {
+    transform: translate(40px, -20px);
+}
+
+/* scale */
+.scale:hover {
+    transform: scale(1.4);
+}
+
+/* rotate */
+.rotate:hover {
+    transform: rotate(25deg);
+}
+
+/* skew */
+.skew:hover {
+    transform: skew(15deg, 10deg);
+}
+
+/* =========================
+   COMBINED TRANSFORM
+   ========================= */
+.combo:hover {
+    transform: translateY(-20px) scale(1.2) rotate(10deg);
+}
