@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Animations Deep Dive</title>
+    <link rel="stylesheet" href="animations.css">
+</head>
+<body>
+
+<div class="section">
+    <div class="title">Basic Animation (@keyframes)</div>
+    <p>
+        Explanation: @keyframes defines how an element changes over time.
+        This animation moves boxes horizontally.
+    </p>
+
+    <div class="container">
+        <div class="box box1 move">Box 1</div>
+        <div class="box box2 move">Box 2</div>
+        <div class="box box3 move">Box 3</div>
+        <div class="box box4 move">Box 4</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">animation-duration & timing-function</div>
+    <p>
+        Explanation: Controls speed and motion curve (ease, linear, ease-in-out).
+    </p>
+
+    <div class="container">
+        <div class="box box1 scale">Ease</div>
+        <div class="box box2 scale">Ease</div>
+        <div class="box box3 scale">Ease</div>
+        <div class="box box4 scale">Ease</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">Continuous Rotation</div>
+    <p>
+        Explanation: Linear timing gives uniform rotation speed.
+    </p>
+
+    <div class="container">
+        <div class="box box1 rotate">Rotate</div>
+        <div class="box box2 rotate">Rotate</div>
+        <div class="box box3 rotate">Rotate</div>
+        <div class="box box4 rotate">Rotate</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">Multiple Properties Animation</div>
+    <p>
+        Explanation: Animation can modify transform and color simultaneously.
+    </p>
+
+    <div class="container">
+        <div class="box box1 combo">Combo</div>
+        <div class="box box2 combo">Combo</div>
+        <div class="box box3 combo">Combo</div>
+        <div class="box box4 combo">Combo</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">Animation Delay & Iteration</div>
+    <p>
+        Explanation: delay waits before starting; iteration-count controls repeats.
+    </p>
+
+    <div class="container">
+        <div class="box box1 move delay">Delay</div>
+        <div class="box box2 move once">Once</div>
+        <div class="box box3 move reverse">Reverse</div>
+        <div class="box box4 fill">Fill</div>
+    </div>
+</div>
+
+<div class="section">
+    <div class="title">Key Takeaway</div>
+    <p>
+        Animations change UI state automatically over time.
+        Use them for loaders, attention cues, and visual feedback —
+        not for everything.
+    </p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    padding: 30px;
+}
+
+/* Section wrapper */
+.section {
+    background: white;
+    padding: 20px;
+    margin-bottom: 35px;
+    border-left: 6px solid #444;
+}
+
+.title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   BASE CONTAINER
+   ========================= */
+.container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* =========================
+   BOXES (4 SAME ELEMENTS)
+   ========================= */
+.box {
+    width: 120px;
+    height: 120px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Different colors */
+.box1 { background-color: #e63946; }
+.box2 { background-color: #457b9d; }
+.box3 { background-color: #2a9d8f; }
+.box4 { background-color: #f4a261; }
+
+/* =========================
+   1. BASIC ANIMATION
+   ========================= */
+.move {
+    animation: moveBox 2s infinite alternate;
+}
+
+@keyframes moveBox {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(80px);
+    }
+}
+
+/* =========================
+   2. ANIMATION DURATION & TIMING
+   ========================= */
+.scale {
+    animation: scaleBox 2s ease-in-out infinite;
+}
+
+@keyframes scaleBox {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.4); }
+    100% { transform: scale(1); }
+}
+
+/* =========================
+   3. ROTATION ANIMATION
+   ========================= */
+.rotate {
+    animation: rotateBox 3s linear infinite;
+}
+
+@keyframes rotateBox {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* =========================
+   4. COLOR + TRANSFORM
+   ========================= */
+.combo {
+    animation: comboBox 3s infinite;
+}
+
+@keyframes comboBox {
+    0% {
+        transform: translateY(0);
+        background-color: #f4a261;
+    }
+    50% {
+        transform: translateY(-40px);
+        background-color: #2a9d8f;
+    }
+    100% {
+        transform: translateY(0);
+        background-color: #f4a261;
+    }
+}
+
+/* =========================
+   5. ANIMATION DELAY
+   ========================= */
+.delay {
+    animation-delay: 1s;
+}
+
+/* =========================
+   6. ANIMATION ITERATION
+   ========================= */
+.once {
+    animation-iteration-count: 1;
+}
+
+/* =========================
+   7. ANIMATION DIRECTION
+   ========================= */
+.reverse {
+    animation-direction: reverse;
+}
+
+/* =========================
+   8. ANIMATION FILL MODE
+   ========================= */
+.fill {
+    animation: fillBox 2s forwards;
+}
+
+@keyframes fillBox {
+    from { transform: scale(0.5); }
+    to { transform: scale(1.2); }
+}
