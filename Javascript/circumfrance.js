@@ -5,5 +5,6 @@ document.getElementById("mySubmit").onclick = function () {
     radius = Number(document.getElementById("myText").value);
     let circumference = 2 * pi * radius;
     document.getElementById("myh2").textContent =
-        `Circumference = ${circumference}`;
+        `Circumference = ${circumference}` cm;
 };
+
