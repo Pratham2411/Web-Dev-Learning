@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #1c1f26, #2a2e37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #d1d5db;
+}
+
+#game-container {
+    background-color: #eef1f5;
+    width: 380px;
+    padding: 26px;
+    border-radius: 14px;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+    color: #1e293b;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+header h1 {
+    font-size: 24px;
+    color: #1f2937;
+    margin-bottom: 6px;
+}
+
+header p {
+    font-size: 14px;
+    color: #64748b;
+}
+
+#game-info {
+    text-align: center;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+#game-info span {
+    font-weight: 600;
+    color: #0891b2;
+}
+
+#input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+#input-section label {
+    font-size: 14px;
+    color: #334155;
+}
+
+#guessInput {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 7px;
+    border: 1px solid #cbd5e1;
+    background-color: #f8fafc;
+}
+
+#guessInput:focus {
+    outline: none;
+    border-color: #0891b2;
+    box-shadow: 0 0 0 2px rgba(8, 145, 178, 0.25);
+}
+
+button {
+    padding: 11px;
+    font-size: 15px;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+#guessBtn {
+    background-color: #0891b2;
+    color: #f8fafc;
+}
+
+#guessBtn:hover {
+    background-color: #0e7490;
+}
+
+#resetBtn {
+    background-color: #64748b;
+    color: #f8fafc;
+    margin-top: 10px;
+}
+
+#resetBtn:hover {
+    background-color: #475569;
+}
+
+#result-section {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 12px;
+    min-height: 22px;
+    color: #1f2937;
+}
+
+#control-section {
+    text-align: center;
+}
