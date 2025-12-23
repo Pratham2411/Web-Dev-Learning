@@ -1,6 +1,12 @@
-let i = 1;
+let correctUsername = "Pratham";
+let correctPassword = "2411";
 
-while (i <= 5) {
-    console.log(i);
-    i++;
+let username = "";
+let password = "";
+
+while (username !== correctUsername || password !== correctPassword) {
+    username = window.prompt("Enter username:");
+    password = window.prompt("Enter password:");
 }
+
+console.log("Login successful");
