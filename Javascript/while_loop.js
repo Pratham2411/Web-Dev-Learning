@@ -1,12 +1,16 @@
 let correctUsername = "Pratham";
 let correctPassword = "2411";
 
-let username = "";
-let password = "";
+let username = window.prompt("Enter username:");
 
-while (username !== correctUsername || password !== correctPassword) {
-    username = window.prompt("Enter username:");
-    password = window.prompt("Enter password:");
+if (username === correctUsername) {
+    let password = window.prompt("Enter password:");
+
+    if (password === correctPassword) {
+        console.log("Login successful");
+    } else {
+        console.log("Invalid credentials");
+    }
+} else {
+    console.log("Invalid credentials");
 }
-
-console.log("Login successful");
