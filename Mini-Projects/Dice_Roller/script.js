@@ -1,8 +1,7 @@
-const btn = document.getElementById("rollBtn");
 const select = document.getElementById("diceCount");
 const box = document.getElementById("diceContainer");
 
-btn.addEventListener("click", () => {
+function roll() {
     box.innerHTML = "";
 
     const n = Number(select.value);
@@ -16,4 +15,4 @@ btn.addEventListener("click", () => {
 
         box.appendChild(img);
     }
-});
+}
