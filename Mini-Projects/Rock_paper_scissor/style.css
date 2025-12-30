@@ -1,0 +1,84 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+h1{
+    font-size: 3.2rem;
+    margin: 20px 0;
+}
+
+.scoreboard{
+    display: flex;
+    gap: 40px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.1);
+}
+
+.choices{
+    margin: 25px 0;
+}
+
+.choices button{
+    font-size: 7rem;
+    min-height: 150px;
+    margin: 0 12px;
+    border-radius: 50%;
+    background-color: hsl(200, 100%, 50%);
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    border: none;
+}
+
+.choices button:hover{
+    background-color: hsl(200, 100%, 70%);
+    transform: scale(1.1);
+}
+
+#playerDisplay,#computerDisplay{
+    font-size: 2.2rem;
+}
+
+#resultDisplay{
+    font-size: 4rem;
+    margin: 15px 0;
+}
+
+#finalResult{
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+.greenText{
+   color: #00ff88;
+}
+
+.redText{
+   color: #ff4d4d;
+}
+
+#resetBtn{
+    margin-top: 25px;
+    padding: 12px 30px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+}
+
+#resetBtn:hover{
+    background-color: orange;
+}
