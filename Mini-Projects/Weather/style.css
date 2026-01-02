@@ -1,17 +1,17 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: hsl(0,0%,95%);
+    background-color: hsl(0, 0%, 95%);
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.weatherForm{
-   margin: 20px;
+.weatherForm {
+    margin: 20px;
 }
 
-.cityInput{
+.cityInput {
     padding: 10px;
     font-size: 2rem;
     font-weight: bold;
@@ -21,58 +21,86 @@ body{
     width: 300px;
 }
 
-button[type="submit"]{
-    padding: 0px 20px;
+button[type="submit"] {
+    padding: 10px 20px;
     font-weight: bold;
     font-size: 2rem;
-    background-color: hsl(122,39%,50%);
+    background-color: hsl(122, 39%, 50%);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-button[type="submit"]:hover{
-    background-color: hsl(122,39%,40%);
+button[type="submit"]:hover {
+    background-color: hsl(122, 39%, 40%);
 }
-.card{
-    /* slow transition b/w two colors */
-   background:linear-gradient(180deg,hsl(210, 100%, 75%),hsl(40, 100%, 75%)) ; 
-   padding: 50px;
-   /* 3-D pop effect */
-   box-shadow: 2px,2px,5px hsla(0,0%,0%,0.5);
-   min-width: 300px;
-   display: flex;
-   flex-direction: column;
+
+.card {
+    /* Day Gradient - Smooth Fade */
+    background: linear-gradient(180deg, hsl(210, 100%, 75%), hsl(40, 100%, 75%));
+    padding: 50px;
+    border-radius: 10px;
+    /* 3-D pop effect using proper spacing */
+    box-shadow: 5px 5px 15px hsla(0, 0%, 0%, 0.3);
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    /* Text Color & Transitions */
+    color: hsla(0, 0%, 0%, 0.75);
+    transition: background 0.8s ease, color 0.5s ease, box-shadow 0.5s ease;
 }
-h1{
+
+/* Premium Night Card - Deep Midnight Fade */
+.card.night {
+    background: linear-gradient(180deg, hsl(230, 60%, 15%), hsl(270, 50%, 25%));
+    color: white;
+    box-shadow: 5px 5px 20px hsla(240, 80%, 5%, 0.6);
+}
+
+h1 {
     margin-top: 0;
     margin-bottom: 25px;
 }
-p{
+
+p {
     font-size: 1.5rem;
     margin: 5px 0;
 }
-.cityDisplay,.tempDisplay{
+
+.cityDisplay, .tempDisplay {
     font-size: 3.5rem;
     font-weight: bold;
-    color: hsla(0,0%,0%,75%);
+    color: hsla(0, 0%, 0%, 0.75);
     margin-bottom: 25px;
+    transition: color 0.5s ease;
 }
-.humidityDisplay{
+
+/* Ensure headings turn white in night mode */
+.card.night .cityDisplay, 
+.card.night .tempDisplay {
+    color: white;
+}
+
+.humidityDisplay {
     font-weight: bold;
     margin-bottom: 25px;
 }
-.descDisplay{
+
+.descDisplay {
     font-style: italic;
     font-weight: bold;
     font-size: 2rem;
 }
-.weatherEmoji{
+
+.weatherEmoji {
     margin: 0;
     font-size: 7.5rem;
 }
-.errorDisplay{
+
+.errorDisplay {
     font-size: 2.5rem;
     font-weight: bold;
     color: hsla(0, 0%, 0%, 0.75);
