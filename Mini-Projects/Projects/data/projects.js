@@ -2,14 +2,14 @@ const projects = [
   {
     name: "Superhero Finder",
     image: "assets/images/superhero.jpg",
-    description: "Search a superhero by name and get complete details using an API.",
+    description: "Search a superhero by name and get complete details.",
     live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Superhero/",
     github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Superhero"
   },
   {
     name: "Weather App",
     image: "assets/images/weather.jpg",
-    description: "Check real-time weather of any city using a weather API.",
+    description: "Check real-time weather of any city using  weather API.",
     live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Weather/",
     github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Weather"
   },
@@ -98,6 +98,7 @@ const projects = [
     github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Projects"
   }
 ];
+
 
 
 
