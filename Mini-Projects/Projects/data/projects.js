@@ -95,6 +95,7 @@ const projects = [
     image: "assets/images/portfolio.jpg",
     description: "A single place to manage and showcase all mini projects.",
     live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Projects/",
-    github: "#"
+    github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Projects"
   }
 ];
+
