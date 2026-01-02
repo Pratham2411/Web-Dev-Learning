@@ -11,7 +11,7 @@ const projects = [
     image: "assets/images/weather.jpg",
     description: "Check real-time weather of any city using a weather API.",
     live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Weather/",
-    github: "#"
+    github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Weather"
   },
   {
     name: "Calculator",
@@ -38,21 +38,21 @@ const projects = [
     name: "Digital Clock",
     image: "assets/images/clock.jpg",
     description: "Live digital clock showing current time.",
-    live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Guess_the_number/",
+    live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Digital_clock/",
     github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Digital_clock"
   },
   {
     name: "Stopwatch",
     image: "assets/images/stopwatch.jpg",
     description: "Start, stop and reset stopwatch with millisecond precision.",
-    live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Guess_the_number/",
+    live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Stopwatch/",
     github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Stopwatch"
   },
   {
     name: "Random Number Generator",
     image: "assets/images/random.jpg",
     description: "Generate random numbers within a given range.",
-    live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Guess_the_number/",
+    live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Random_number_generator/",
     github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Random_number_generator"
   },
   {
@@ -81,7 +81,7 @@ const projects = [
     image: "assets/images/temp.jpg",
     description: "Convert temperature between Celsius, Fahrenheit and Kelvin.",
     live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Tempereature_conversion/",
-    github: "#"
+    github:"https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Tempereature_conversion"
   },
   {
     name: "Counter",
@@ -98,4 +98,5 @@ const projects = [
     github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Projects"
   }
 ];
+
 
