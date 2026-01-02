@@ -1,0 +1,7 @@
+{
+    "name":"Pratham",
+     "age":21,
+     "isEmployed": true,
+     "hobbies":["cricket","coding","badminton"]
+
+}

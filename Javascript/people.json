@@ -1,0 +1,18 @@
+[{
+    "name":"Pratham",
+     "age":21,
+     "isEmployed": true,
+     "hobbies":["cricket","coding","badminton"]
+},
+{
+    "name":"Gautam",
+     "age":21,
+     "isEmployed": false,
+     "hobbies":["cricket","coding","gym"]
+},
+{
+    "name":"Vinayak",
+     "age":20,
+     "isEmployed": true,
+     "hobbies":["cricket","singing","badminton"]
+}]
