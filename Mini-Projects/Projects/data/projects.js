@@ -80,8 +80,8 @@ const projects = [
     name: "Temperature Converter",
     image: "assets/images/temp.jpg",
     description: "Convert temperature between Celsius, Fahrenheit and Kelvin.",
-    live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Temperature_conversion/",
-    github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Temperature_conversion"
+    live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Tempereature_conversion/",
+    github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Tempereature_conversion"
   },
   {
     name: "Counter",
@@ -98,4 +98,5 @@ const projects = [
     github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Projects"
   }
 ];
+
 
