@@ -98,3 +98,4 @@ const projects = [
     github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Projects"
   }
 ];
+
