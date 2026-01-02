@@ -26,12 +26,12 @@ const projects = [
     description: "Classic rock-paper-scissors game against the computer.",
     live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Rock_paper_scissor/",
     github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Rock_paper_scissor"
-  }, 
+  },
   {
     name: "Guess the Number",
     image: "assets/images/guess.jpg",
     description: "Guess the randomly generated number with hints.",
-    live:  "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Guess_the_number/",
+    live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Guess_the_number/",
     github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Guess_the_number"
   },
   {
@@ -80,24 +80,21 @@ const projects = [
     name: "Temperature Converter",
     image: "assets/images/temp.jpg",
     description: "Convert temperature between Celsius, Fahrenheit and Kelvin.",
-    live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Tempereature_conversion/",
-    github:"https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Tempereature_conversion"
+    live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Temperature_conversion/",
+    github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Temperature_conversion"
   },
   {
     name: "Counter",
     image: "assets/images/counter.jpg",
     description: "Increment, decrement and reset counter value.",
-    live: "https://pratham2411.github.io/Web-Dev-Learning/Counter/",
+    live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Counter/",
     github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Counter"
   },
   {
-    name: "Project Handler ",
+    name: "Project Handler",
     image: "assets/images/portfolio.jpg",
     description: "A single place to manage and showcase all mini projects.",
     live: "https://pratham2411.github.io/Web-Dev-Learning/Mini-Projects/Projects/",
     github: "https://github.com/Pratham2411/Web-Dev-Learning/tree/main/Mini-Projects/Projects"
   }
 ];
-
-
-
