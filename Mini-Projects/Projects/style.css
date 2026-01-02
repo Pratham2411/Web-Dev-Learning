@@ -1,0 +1,264 @@
+/* =====================
+   GLOBAL RESET & THEME
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0f172a;
+  --bg-dark: #020617;
+  --card-bg: #020617;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-soft: rgba(56, 189, 248, 0.2);
+  --shadow: rgba(0, 0, 0, 0.7);
+}
+
+body {
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color: var(--text);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 30px;
+  min-height: 100vh;
+}
+
+/* =====================
+   HEADER
+===================== */
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+  animation: fadeDown 0.8s ease;
+}
+
+.header h1 {
+  font-size: 2.6rem;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* =====================
+   GRID LAYOUT
+===================== */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 28px;
+}
+
+/* =====================
+   PROJECT CARD
+===================== */
+.project-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), transparent),
+              var(--card-bg);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px var(--shadow);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+  position: relative;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* Lift + depth */
+.project-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.9);
+}
+
+/* =====================
+   GLOW SWEEP EFFECT
+===================== */
+.project-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    var(--accent-soft),
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+.project-card:hover::after {
+  opacity: 1;
+}
+
+/* =====================
+   IMAGE SECTION
+===================== */
+.project-image {
+  height: 170px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+/* Image zoom */
+.project-card:hover img {
+  transform: scale(1.12);
+  filter: brightness(1.1);
+}
+
+/* =====================
+   CONTENT
+===================== */
+.project-content {
+  padding: 18px;
+}
+
+.project-content h3 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.project-content p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  line-height: 1.45;
+  margin-bottom: 16px;
+}
+
+/* =====================
+   LINKS (SLIDE-IN)
+===================== */
+.project-links {
+  display: flex;
+  gap: 12px;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: all 0.35s ease;
+}
+
+.project-card:hover .project-links {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-links a {
+  text-decoration: none;
+  font-size: 0.85rem;
+  color: var(--accent);
+  border: 1px solid var(--accent);
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+  background: var(--accent);
+  color: var(--bg-dark);
+  box-shadow: 0 0 12px var(--accent-soft);
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+  margin-top: 70px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* =====================
+   MODAL (FOR FUTURE POPUP)
+===================== */
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.75);
+  backdrop-filter: blur(6px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal.active {
+  display: flex;
+}
+
+.modal-content {
+  background: var(--card-bg);
+  border-radius: 16px;
+  max-width: 800px;
+  width: 90%;
+  padding: 24px;
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.9);
+  animation: scaleIn 0.35s ease;
+}
+
+/* =====================
+   ANIMATIONS
+===================== */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* =====================
+   MOBILE POLISH
+===================== */
+@media (max-width: 600px) {
+  body {
+    padding: 18px;
+  }
+
+  .header h1 {
+    font-size: 2rem;
+  }
+
+  .project-image {
+    height: 150px;
+  }
+}
