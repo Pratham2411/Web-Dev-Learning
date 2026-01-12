@@ -13,7 +13,11 @@ app.get("/",function(req,res){
     res.send('Hello World')
 })
 app.get("/profile",function(req,res){
-    res.send('This is my profile section')
+    res.send('This is my profile ')
 })
 // server chalao
 app.listen(3000)
+// npm i nodemon -g 
+// one time install(global install hai ye)
+//  npx nodemon script.js
+// ab server auto reftesh ho jayega any changes pe
