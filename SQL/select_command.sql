@@ -57,6 +57,24 @@ LIMIT 3;
 
 SELECT max(marks) FROM student;
 SELECT avg(marks) FROM student;
+SELECT count(marks) FROM student;
+
+-- Group By Clause
+-- Groups rows that have the same values into summary rows.
+-- It collects data from multiple records and groups the result by one or more column.
+-- *Generally we use group by with some aggregation function.
+
+-- Count number of students in each city
+SELECT city, count(name)
+FROM student
+GROUP BY city;
+
+-- average marks in each city
+SELECT city, avg(marks)
+FROM student
+GROUP BY city;
+
+
 
 
 
