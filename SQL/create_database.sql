@@ -10,4 +10,11 @@ CREATE TABLE student(
  name VARCHAR(50),
  age INT NOT NULL);
  
+ INSERT INTO student VALUES(1,"PRATHAM",21);
+ INSERT INTO student VALUES(2,"MADHAV",22);
+ 
+ SELECT * FROM student;
+ 
+ 
+ 
  
