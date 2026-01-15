@@ -21,6 +21,12 @@ CREATE TABLE student(
  
  SELECT * FROM student;
  
+ SHOW DATABASES;
+ SHOW TABLES;
+ 
+ 
+ 
+ 
  
  
  
