@@ -47,5 +47,13 @@ SELECT * FROM student WHERE city NOT IN ("Delhi", "Mumbai");
 SELECT * FROM student
 ORDER BY marks ASC;
 
+-- TOP 3 STUDENTS 
+SELECT * FROM student
+ORDER BY marks DESC
+LIMIT 3;
+
+
+
+
 
 
