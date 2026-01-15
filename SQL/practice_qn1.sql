@@ -6,7 +6,7 @@ id int,
 name VARCHAR(50),
 salary INT NOT NULL,
 PRIMARY KEY(ID));
---  CAN ALSO DO PRIMARY KEY(id,name) combination wii be unique not individual
+--  CAN ALSO DO PRIMARY KEY(id,name) combination will be unique not individual
 
 INSERT INTO employee_info
  VALUES
