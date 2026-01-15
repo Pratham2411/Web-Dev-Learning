@@ -41,6 +41,11 @@ SELECT * FROM student WHERE city NOT IN ("Delhi", "Mumbai");
 -- Limit Clause
 -- Sets an upper limit on number of (tuples)rows to be returned
  SELECT *FROM student LIMIT 4;
+ 
+--  Order By Clause
+-- To sort in ascending (ASC) or descending order (DESC)
+SELECT * FROM student
+ORDER BY marks ASC;
 
 
 
