@@ -52,6 +52,13 @@ SELECT * FROM student
 ORDER BY marks DESC
 LIMIT 3;
 
+-- Aggregate functions perform a calculation on a set of values, and return a single value.
+-- count,max,min,sum,avg
+
+SELECT max(marks) FROM student;
+SELECT avg(marks) FROM student;
+
+
 
 
 
