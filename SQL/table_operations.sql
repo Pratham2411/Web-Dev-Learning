@@ -45,6 +45,9 @@ MODIFY age VARCHAR(2);
 ALTER TABLE students
 CHANGE age stu_age INT;
 
+-- Delete all table data
+TRUNCATE TABLE student;
+
 
 
 
