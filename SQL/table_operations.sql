@@ -1,23 +1,19 @@
 -- TABLE OPERATIONS
-CREATE DATABASE IF NOT EXISTS college;
-USE college;
--- CREATING A TABLE
-CREATE TABLE IF NOT EXISTS student(
- id INT PRIMARY KEY,
- name VARCHAR(50),
- age INT NOT NULL);
- 
- -- INSERTNG DATA INTO TABLES
---  INSERT INTO student VALUES(1,"PRATHAM",21);
---  INSERT INTO student VALUES(2,"MADHAV",22);
-
--- ANOTHER METHOD (PREVIOUS ONE IS BETTER)
-INSERT INTO student 
-(id,name,age)
-VALUES
-(3,"gAUTAM",20);
  
  -- PRINTING COMPLETE TABLE 
 SELECT * FROM student;
+
+-- updating existing values
+SET SQL_SAFE_UPDATES = 0;
+
+UPDATE student
+SET grade="O"
+WHERE grade="A";
+
+UPDATE student
+SET marks=95
+WHERE rollno=104;
+
+
 
  
