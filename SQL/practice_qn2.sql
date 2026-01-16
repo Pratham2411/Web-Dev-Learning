@@ -4,3 +4,8 @@ SELECT city, avg(marks)
 FROM student
 GROUP BY city
 ORDER BY avg(marks) ASC;
+
+SELECT city, avg(marks)
+FROM student
+GROUP BY city
+ORDER BY city ;
