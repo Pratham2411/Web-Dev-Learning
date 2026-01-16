@@ -22,6 +22,30 @@ SET marks = marks + 1;
 DELETE FROM student
 WHERE marks < 33;
 
+-- Alter (change the schema of a table)
+-- adding a column
+ALTER TABLE student
+ADD COLUMN age INT NOT NULL DEFAULT 19;
+
+-- deleting a column
+ALTER TABLE student
+DROP COLUMN age ;
+
+-- RENAME Table
+ALTER TABLE student
+RENAME TO students;
+
+SELECT * FROM students;
+
+-- MODIFY Column
+ALTER TABLE students
+MODIFY age VARCHAR(2);
+
+-- CHANGE Column (rename)
+ALTER TABLE students
+CHANGE age stu_age INT;
+
+
 
 
 
