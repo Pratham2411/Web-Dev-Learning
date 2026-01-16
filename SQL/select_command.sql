@@ -85,6 +85,20 @@ FROM student
 GROUP BY city
 HAVING max(marks) > 90;
 
+-- General Order
+-- SELECT column(s)
+-- FROM table_name
+-- WHERE condition
+-- GROUP BY column(s)
+-- HAVING condition
+-- ORDER BY column(s) ASC;
+
+SELECT city
+FROM student
+WHERE grade = "A"
+GROUP BY city
+HAVING MAX(marks) > 93
+ORDER BY city DESC;
 
 
 
