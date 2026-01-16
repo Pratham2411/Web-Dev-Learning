@@ -14,6 +14,15 @@ UPDATE student
 SET marks=95
 WHERE rollno=104;
 
+UPDATE student
+SET marks = marks + 1;
+
+-- deleting from existing rows
+
+DELETE FROM student
+WHERE marks < 33;
+
+
 
 
  
