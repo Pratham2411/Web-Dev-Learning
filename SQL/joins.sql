@@ -64,19 +64,35 @@ RIGHT JOIN course as c
 ON s.id = c.id; 
 
 -- EXCLUSIVE JOIN 
--- LEFT EXCLUSIVE (LEFT-RIGHT)
+-- LEFT EXCLUSIVE all columns in left which are not in right
 SELECT *
 FROM student as s 
 LEFT JOIN course as c
 ON s.id = c.id
 WHERE c.id IS NULL;
 
--- RIGHT EXLUSIVE (RIGHT-LEFT)
+-- RIGHT EXLUSIVE 
 SELECT *
 FROM student as s 
 RIGHT JOIN course as c
 ON s.id = c.id
 WHERE s.id IS NULL;
+
+-- FULL EXCLUSIVE everything not common
+SELECT s.id
+FROM student s
+LEFT JOIN course c
+ON s.id = c.id
+WHERE c.id IS NULL
+
+UNION
+
+SELECT c.id
+FROM student s
+RIGHT JOIN course c
+ON s.id = c.id
+WHERE s.id IS NULL;
+
       
 
 
