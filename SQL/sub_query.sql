@@ -29,3 +29,22 @@ WHERE rollno IN (
     WHERE rollno % 2 = 0
 );
 
+-- Example with FROM
+-- Find the max marks from the students of Delhi
+-- Step 1. Find the students of Delhi
+-- Step 2. Find their max marks using the sublist in step 1
+
+SELECT *
+    FROM students
+    WHERE city = 'Delhi';
+    
+SELECT MAX(marks) AS max_marks
+FROM (SELECT *FROM students WHERE city = 'Delhi') as temp;
+
+
+
+
+
+
+
+
