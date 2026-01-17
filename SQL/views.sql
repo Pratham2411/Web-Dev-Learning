@@ -11,3 +11,4 @@ select rollno,full_name,marks
 from students;
 
 select* from view1;
+--  drop view view1;
