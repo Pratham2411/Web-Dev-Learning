@@ -93,6 +93,29 @@ RIGHT JOIN course c
 ON s.id = c.id
 WHERE s.id IS NULL;
 
+-- Self Join
+-- It is a regular join but the table is joined with itself.
+CREATE TABLE employee(
+id INT PRIMARY KEY,
+name VARCHAR(50),
+manager_id INT);
+
+INSERT INTO employee (id, name, manager_id)
+VALUES
+(101, "adam", 103),
+(102, "bob", 104),
+(103, "casey", NULL),
+(104, "donald", 103);
+
+select * from employee;
+
+select b.name,a.name as manager_name
+from employee as a
+join employee as b
+on a.id=b.manager_id;
+
+
+
       
 
 
