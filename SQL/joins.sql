@@ -1,5 +1,5 @@
 -- Join is used to combine rows from two or more tables, based on a related column between them
--- Types:- inner,left,right,full
+-- Types:- inner,left,right,full join
 
 CREATE DATABASE college_db;
 USE college_db;
