@@ -6,15 +6,13 @@ This repository contains my **web development learning and practice**, covering 
 I use this repo to:
 - Learn web technologies step by step
 - Practice concepts with small examples and mini-projects
-- Build a strong foundation before moving to advanced frameworks
 
 ---
 
 ## What I’m Learning Here
 - Frontend development (HTML, CSS, JavaScript)
 - Layouts, responsiveness, and UI components
-- Backend basics and databases (as I progress)
-- Full-stack concepts over time
+- Backend basics and databases
 
 ---
 
