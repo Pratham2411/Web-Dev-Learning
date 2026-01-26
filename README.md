@@ -1,3 +1,4 @@
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 # Web Development
 
 This repository contains my **web development learning and practice**, covering both **frontend and backend concepts**.
