@@ -1,0 +1,4 @@
+Get=> server se data FETCH karwana ho
+POST=> server par data SEND karna ho
+PATCH=> server par data UPDATE karna ho
+DELETE=> server par data DELETE karna ho
