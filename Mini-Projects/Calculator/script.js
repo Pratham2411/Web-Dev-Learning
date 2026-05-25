@@ -1,18 +1,22 @@
- const display=document.getElementById("display");
- function append(input){
-    display.value+=input;
- }
+const display = document.getElementById("display");
 
- function clearDisplay(){
-    display.value="";
- }
+function append(input){
+    display.value += input;
+}
 
- function calculate(){
+function clearDisplay(){
+    display.value = "";
+}
+
+function deleteLast(){
+    display.value = display.value.slice(0, -1);
+}
+
+function calculate(){
     try{
-      display.value=eval(display.value);
+        display.value = eval(display.value);
     }
     catch(error){
-        display.value="Error";
+        display.value = "Error";
     }
-   
- }
+}
